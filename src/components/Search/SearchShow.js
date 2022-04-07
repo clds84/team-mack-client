@@ -32,6 +32,8 @@ const SearchShow = (props) => {
         //     })
         // })
     }, [])
+
+    //select tag and option tag that goes inside whole select element
     return (
         <>
         <Card style={{ width: '30%' }} className="m-2">
