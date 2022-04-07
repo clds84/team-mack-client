@@ -15,7 +15,7 @@ const GetSearch = (props) => {
  const [search, setSearch] = useState({type: null, name: null})
  
  const [searchResults, setSearchResults] = useState(null)
-    // we want to pass in the values we get from search forms
+    // we want to pass in the    values we get from search forms
     
     // that we assigned to state and pass them in as parameters 
     // to getAllSearch
@@ -53,6 +53,7 @@ const GetSearch = (props) => {
 
         e.preventDefault()
         getAllSearch(search.type, search.name)
+
         // if create is successful we shoudl navigate to the show page
         .then(res => {
             setSearchResults(res.data.performers)

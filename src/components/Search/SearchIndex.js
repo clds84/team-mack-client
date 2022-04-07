@@ -34,7 +34,7 @@ const SearchIndex = (props) => {
             
             <Card key={searchItem.id} style={{ width: '30%' }} className="m-2">
                 <Link style={{ textDecoration: "none" }}
-                    to={`/search/${searchItem.type}/${searchItem.name}/${searchItem.id}`}>
+                    to={`/search/${search.type}/${search.name}/${searchItem.id}`}>
                     {searchItem.name}
                     <Card.Header>
 
